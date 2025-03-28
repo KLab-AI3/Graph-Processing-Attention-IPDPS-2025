@@ -42,7 +42,7 @@ We define two mask types: explicit and implicit. An explicit mask is one that re
 
 - **CSR:** located within `/Sparse_FlashAttention_CSR/`, this will allow the user to perform the attention operation using any arbitrary mask that is stored in the CSR format.
 
-- **Global (no local):** located within `/Sparse_FlashAttention_Global_No_Local/`, this will allow the user to specify a list of global attention tokens that will not be masked, except for a local window region. Everything outside of the provided row/column indices is masked.
+- **Global (No Local):** located within `/Sparse_FlashAttention_Global_No_Local/`, this will allow the user to specify a list of global attention tokens that will not be masked, except for a local window region. Everything outside of the provided row/column indices is masked.
 
 - **Local:** located within `/Sparse_FlashAttention_Local/`, this will allow the user to specify a 1D width parameter to control how wide a local context window should be.
 
