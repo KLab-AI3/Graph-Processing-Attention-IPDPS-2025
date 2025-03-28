@@ -27,9 +27,9 @@ where the arguments are as followed:
 
 - **`w_val`** is the value vector of the mask's CSR form.
 
-- **`m`** is a 0-initialized vector of length context length that stores the maximum values for the online softmax.
+- **`m`** is a `-inf`-initialized vector of length context length that stores the maximum values for the online softmax.
 
-- **`l`** is a `-inf`-initialized vector of length context length that stores the normalization terms for the online softmax.
+- **`l`** is a `0.0`-initialized vector of length context length that stores the normalization terms for the online softmax.
 
 - **`out`** is the output matrix.
 

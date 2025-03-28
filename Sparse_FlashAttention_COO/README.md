@@ -27,9 +27,9 @@ where the arguments are as followed:
 
 - **`w_value`** is the value vector of the mask's COO form.
 
-- **`m`** is a 0-initialized vector of length context length that stores the maximum values for the online softmax.
+- **`m`** is a `-inf`-initialized vector of length context length that stores the maximum values for the online softmax.
 
-- **`l`** is a `-inf`-initialized vector of length context length that stores the normalization terms for the online softmax.
+- **`l`** is a `0.0`-initialized vector of length context length that stores the normalization terms for the online softmax.
 
 - **`out`** is the output matrix.
 

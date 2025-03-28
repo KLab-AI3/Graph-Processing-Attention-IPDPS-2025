@@ -67,8 +67,8 @@ __global__ void spfa_local_cuda_forward_kernel(
   }
 
   // Move the softmax statistics into shared memory.
-  //// - m is initialized with 0.0.
-  //// - l is initialized with -inf.
+  //// - m is initialized with -inf.
+  //// - l is initialized with 0.0.
   //// - If they are set to something else in shared memory, then those values will be used.
   if (threadIdx.x == 0) {
     m_i[0] = m[blockIdx.x];
